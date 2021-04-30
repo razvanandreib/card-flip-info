@@ -31,7 +31,7 @@ body {
 .card {
     margin: 10rem auto 0;
     width: 20rem;
-    height: 30rem;
+    height: 32rem;
 }
 
 .card__inner {
@@ -70,18 +70,25 @@ body {
 .card__face p {
     font-size: 1.1rem;
     padding: .3rem 1rem;
-    letter-spacing: .01rem;
+    letter-spacing: .012rem;
 }
 
-.card__face--front__img {
+.card__face--front{
     background-image: url('/img/mountain-view.webp');
     width: 100%;
-    height: 15rem;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px 10px 0 0;
+    border-radius:  10px;
 }
+
+.card__face--front-text {
+    height: 100%;
+    margin-top: 16rem;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.829), rgba(255, 255, 255, 0.562), rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
 
 .card__face--back {
     transform: rotateY(180deg);
